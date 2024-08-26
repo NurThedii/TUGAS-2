@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+:root {
+  --magenta: rgba(255, 42, 209, 0.716);
+}
+.magenta {
+  color: var(--magenta);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+main {
+  margin: 10px 20px 0 20px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+p,
+.p {
+  color: grey;
+  /* word-spacing: px; */
+  font-size: 13px;
+  margin: 14px 0px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+nav .kiri {
+  gap: 10px;
+}
+.menu {
+  display: none;
+}
+nav .kanan {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 12px;
+}
+.login {
+  padding: 4px 14px;
+  border: 1px solid var(--magenta);
+  border-radius: 50px;
+}
+.login:hover {
+  background-color: var(--magenta);
+  color: white;
+  transition: 0.5s;
+}
+.signup {
+  background-color: var(--magenta);
+  color: white;
+  padding: 4px 14px;
+  border: 1px solid var(--magenta);
+  border-radius: 50px;
+  width: auto;
+}
+
+img {
+  display: inline-block;
+}
+section img {
+  width: 500px;
+}
+.kiri {
+  display: flex;
+  justify-content: center;
+}
+section .kanan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section {
+  display: flex;
+}
+.awal .kiri {
+  flex-direction: column;
+}
+.button-pink {
+  padding: 8px 20px;
+  width: 100px;
+  border-radius: 100px;
+  background-color: var(--magenta);
+  display: inline;
+  font-size: 14px;
+  color: white;
+}
+.ketiga {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.paragraf {
+  text-align: center;
+  width: 700px;
+}
+.contain-kotak {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.kotak {
+  width: 200px;
+}
+.kotak img {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  margin: 10px auto;
+}
+.kotak span {
+  padding: 10px;
+  text-align: center;
+}
+.text-center {
+  text-align: center;
+}
+.not-found {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.not-found i {
+  font-size: 70px;
+  display: block;
+}
+.not-found .kotak {
+  width: 50%;
+  text-align: center;
+}
+.not-found .kotak h1 {
+  font-size: 40px;
+}
+.not-found .kotak p {
+  margin: 0px;
+}
+.not-found a {
+  margin: 20px;
+}
+@media (max-width: 480px) {
+  nav {
+    position: relative;
+  }
+  nav .kanan {
+    position: absolute;
+    margin-top: 53px;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    left: 0px;
+    padding: 10px;
+  }
+  main {
+    margin-top: 30px;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid var(--magenta);
+    height: 0px;
+    padding: 15px 10px;
+    border-radius: 7px;
+    color: var(--magenta);
+  }
+  .awal img {
+    width: 100%;
+  }
+  .awal {
+    flex-direction: column;
+  }
+  .kedua {
+    display: flex;
+    flex-direction: column;
+  }
+  .kedua img {
+    width: 100%;
+  }
+  .ketiga,
+  .ketiga .paragraf {
+    width: auto;
+    word-break: break;
+    text-align: center;
+  }
+}
